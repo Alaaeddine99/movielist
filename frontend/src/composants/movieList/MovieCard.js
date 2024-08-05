@@ -20,7 +20,7 @@ const MovieCard = ({ el, refreshMovies }) => {
       <div className="movie-info">
         <h3>{el.titre}</h3>
         <span>{el.rate}</span> <br /><br /><br /><br />
-        <h3>Trailer</h3>
+       
         <button onClick={removeM}>Remove</button>
         <button onClick={() => navigate(`/updateMovie/${el._id}`)}>Update</button>
       </div>

@@ -43,9 +43,7 @@ const MovieList = ({ searchResults = [], loading, error }) => {
   return (
     <div>
       <main id="main">
-        {movies.length === 0 ? (
-          <p>No movies found.</p>
-        ) : (
+        { (
           movies.map(el => <MovieCard key={el._id} el={el}  refreshMovies={refreshMovies} />)
         )}
       </main>
